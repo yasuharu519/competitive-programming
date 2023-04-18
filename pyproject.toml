@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "competitive-programming"
+version = "0.1.0"
+description = ""
+authors = ["Yasuharu Sawada <yasuharu519@gmail.com>"]
+readme = "README.md"
+packages = [{include = "competitive_programming"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+atcoder-tools = "^2.12.0"
+markupsafe = "2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

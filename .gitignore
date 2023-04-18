@@ -1,0 +1,5 @@
+AtCoder/**/in_*.txt
+AtCoder/**/out_*.txt
+AtCoder/**/metadata.json
+__pycache__
+*.py.1

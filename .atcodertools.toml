@@ -1,0 +1,19 @@
+[codestyle]
+indent_type='space' # 'tab' or 'space'
+indent_width=4
+workspace_dir='./AtCoder'
+template_file='./templates/default_template.py.j2'
+lang='python' # Check README.md for the supported languages.
+
+[tester]
+compile_before_testing=true
+compile_only_when_diff_detected=true
+timeout_adjustment=1.2
+
+[etc]
+download_without_login=false
+parallel_download=false
+save_no_session_cache=false
+skip_existing_problems=false
+in_example_format="in_{}.txt"
+out_example_format="out_{}.txt"
