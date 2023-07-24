@@ -3,3 +3,4 @@ AtCoder/**/out_*.txt
 AtCoder/**/metadata.json
 __pycache__
 *.py.1
+.venv
