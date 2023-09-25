@@ -21,12 +21,26 @@ def solve(N: int, M: int, s: "List[int]", c: "List[int]"):
             print(-1)
             return
 
+    if len(digimap.keys()) == 0:
+        if N == 1:
+            print(0)
+            return
+        elif N == 2:
+            print(10)
+            return
+        elif N == 3:
+            print(100)
+            return
+
     res = []
     for i in range(1, N + 1):
         if i in digimap:
             res.append(digimap[i])
         else:
-            res.append(0)
+            if i == 1:
+                res.append(1)
+            else:
+                res.append(0)
 
     print("".join([str(x) for x in res]))
     return
