@@ -5,7 +5,7 @@ import sys
 def solve(W: int, H: int, x: int, y: int):
     area = W * H
 
-    if x == W // 2 and y == H // 2:
+    if x  * 2== W and y * 2 == H:
         print(area / 2, 1)
     else:
         print(area / 2, 0)
