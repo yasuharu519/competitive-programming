@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
 import sys
+from collections import defaultdict
 
 YES = "POSSIBLE"  # type: str
 NO = "IMPOSSIBLE"  # type: str
 
 
 def solve(N: int, M: int, a: "List[int]", b: "List[int]"):
+    neighbors = defaultdict(set)
+
+    for ai, bi in zip(a, b):
+        neighbors[ai].add(bi)
+        neighbors[bi].add(ai)
+
+    second_islands = neighbors[1]
+    for island in second_islands:
+        if N in neighbors[island]:
+            print(YES)
+            return
+
+    print(NO)
     return
 
 
