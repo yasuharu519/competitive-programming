@@ -10,11 +10,12 @@ def solve(N: int, a: List[int]) -> bool:
 
     if N % 3 != 0:
         return counter.get(0, 0) == N
+
     v = list(counter.keys())
     if len(v) == 1:
         return counter.get(0, 0) == N
     elif len(v) == 2:
-        return counter.get(0, 0) == N // 2
+        return counter.get(0, 0) == N // 3
     elif len(v) == 3:
         if (v[0] ^ v[1] ^ v[2]) != 0:
             return False
